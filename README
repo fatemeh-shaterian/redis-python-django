@@ -1,1 +1,11 @@
 this is a first project of nosql. use basic djangi python and redis to simulate small web baised tweeter.
+
+requirments python 2.x
+redis3.2.100
+//to inistal django use in c:/python27/Scripts
+pip install django
+python django-admin.py startproject hello
+cd hello
+python manage.py runserver  0.0.0.0:8000  
+python manage.py startapp polls
+polls -> views.py
