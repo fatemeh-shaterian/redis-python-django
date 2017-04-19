@@ -1,0 +1,9 @@
+<ul>
+        {% for item in item_list %}
+		<div class="tweet">
+            <li><b>{{item.login}} commented:</b></br> {{item.message}} </li>
+			</div>
+        {% endfor %}
+</ul>
+<input type="text" name="postId" value="{{postId}}" class="behide">
+<input type="text" name="findId" value="{{findId}}" class="behide">

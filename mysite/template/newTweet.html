@@ -1,0 +1,106 @@
+<html>
+<head>
+    <title>newTweet</title>
+</head>
+
+<style>
+	.button {
+   border: 1px solid #0a3c59;
+   background: #1f3831;
+   background: -webkit-gradient(linear, left top, left bottom, from(#31574c), to(#1f3831));
+   background: -webkit-linear-gradient(top, #31574c, #1f3831);
+   background: -moz-linear-gradient(top, #31574c, #1f3831);
+   background: -ms-linear-gradient(top, #31574c, #1f3831);
+   background: -o-linear-gradient(top, #31574c, #1f3831);
+   background-image: -ms-linear-gradient(top, #31574c 0%, #1f3831 100%);
+   padding: 10.5px 21px;
+   -webkit-border-radius: 6px;
+   -moz-border-radius: 6px;
+   border-radius: 6px;
+   -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   text-shadow: #7ea4bd 0 1px 0;
+   color: #ffffff;
+   font-size: 14px;
+   font-family: helvetica, serif;
+   text-decoration: none;
+   vertical-align: middle;
+   height:40px;
+   margin-left:30px;
+   }
+.button:hover {
+   border: 1px solid #0a3c59;
+   text-shadow: #1e4158 0 1px 0;
+   background: #26473e;
+   background: -webkit-gradient(linear, left top, left bottom, from(#396b5d), to(#26473e));
+   background: -webkit-linear-gradient(top, #396b5d, #26473e);
+   background: -moz-linear-gradient(top, #396b5d, #26473e);
+   background: -ms-linear-gradient(top, #396b5d, #26473e);
+   background: -o-linear-gradient(top, #396b5d, #26473e);
+   background-image: -ms-linear-gradient(top, #396b5d 0%, #26473e 100%);
+   color: #fff;
+   }
+.button:active {
+   text-shadow: #1e4158 0 1px 0;
+   border: 1px solid #0a3c59;
+   background: #26473e;
+   background: -webkit-gradient(linear, left top, left bottom, from(#396b5d), to(#26473e));
+   background: -webkit-linear-gradient(top, #396b5d, #26473e);
+   background: -moz-linear-gradient(top, #396b5d, #26473e);
+   background: -ms-linear-gradient(top, #396b5d, #26473e);
+   background: -o-linear-gradient(top, #396b5d, #26473e);
+   background-image: -ms-linear-gradient(top, #396b5d 0%, #26473e 100%);
+   color: #fff;
+   }
+	textarea{
+	margin-bottom:10px;
+	margin-left: 30px;
+	margin-top:20px;
+	}
+	
+	body{
+	background:#E1E9E7;
+	padding:0px;
+	margin:0px;
+	font-family: "Roboto",sans-serif;
+	font-weight:normal;
+	}
+	
+	.header{
+	background:#1f3831;
+	color:white;
+	padding:10px;
+	height:70px;
+	width:100%;
+	margin:0px;
+	
+	}
+	.annotation{
+		background-color:#20725c;
+		color:white;
+		padding:20px;
+		margin: 100px auto 0px;
+		width:500px;
+		border: 0px solid;
+		border-radius: 25px;
+		/*font-family: "Georgia";*/
+		
+	}
+	
+</style>
+<body>
+
+	<div class="header"><h1>Write Your New Tweet Here</h1></div>
+	<div class="annotation">
+		<form action="/newTweet/"  method="post">	
+
+		<textarea name="tweet" rows="10" cols="50" required></textarea> 
+		</br>
+		<input class="button" type="submit" value="Send">
+		</form>
+		<a href="/home/"><button class="button" style="margin-left:30px;"class="button"> Back To Home</button></a>
+	</div>
+</body>
+</head>
+	
